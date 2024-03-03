@@ -3,7 +3,6 @@ import "./ImageGenerator.css";
 import defaultImg from "../Assets/default_image.svg";
 
 const ImageGenerator = () => {
-  // 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
   const [image_url, setImage_url] = useState("/");
   const [loading, setloading] = useState(false);
   let inputRef = useRef(null);
@@ -35,7 +34,6 @@ const ImageGenerator = () => {
     let data_array = data.data;
     setImage_url(data_array[0].url);
     setloading(false);
-    // console.log(data, "data");
   };
 
   return (
